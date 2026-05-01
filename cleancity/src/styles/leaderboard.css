@@ -1,0 +1,87 @@
+.leaderboard-page {
+  width: 90%;
+  margin: 35px auto;
+}
+
+.leaderboard-page h1 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.leaderboard-subtitle {
+  color: #64748b;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.leaderboard-list {
+  display: grid;
+  gap: 18px;
+}
+
+.leaderboard-card {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 80px 1fr 320px;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+}
+
+.rank {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.volunteer-info h3 {
+  margin: 0 0 6px;
+  color: #111827;
+}
+
+.volunteer-info p {
+  margin: 0;
+  color: #64748b;
+}
+
+.progress-box p {
+  margin: 0 0 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #2563eb, #10b981);
+  border-radius: 999px;
+}
+
+.reward-badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: #dcfce7;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .leaderboard-card {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-box {
+    width: 100%;
+  }
+}
